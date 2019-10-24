@@ -42,7 +42,7 @@ public class FirebaseAnalyticsPlugin extends ReflectiveCordovaPlugin {
             if (value instanceof String) {
                 bundle.putString(key, (String)value);
             } else if (value instanceof Integer) {
-                bundle.putInt(key, (Integer)value);
+                bundle.putDouble(key, Double.valueOf((Integer)value));
             } else if (value instanceof Double) {
                 bundle.putDouble(key, (Double)value);
             } else if (value instanceof Long) {
